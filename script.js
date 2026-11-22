@@ -1,7 +1,8 @@
-const contactBtn = document.getElementById('contactBtn');
-const contactToast = document.getElementById('contactToast');
+const btn = document.getElementById('actionBtn');
+const output = document.getElementById('output');
+let count = 0;
 
-contactBtn.addEventListener('click', () => {
-  contactToast.classList.toggle('hidden');
-  console.log('Contact button toggled');
+btn.addEventListener('click', () => {
+  count++;
+  output.textContent = `Button clicked ${count} time${count === 1 ? '' : 's'}!`;
 });
