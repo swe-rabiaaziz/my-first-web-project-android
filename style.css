@@ -1,68 +1,53 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: system-ui, -apple-system, sans-serif;
-  background: #090d16;
-  color: #f1f5f9;
-  padding: 24px 16px;
-  max-width: 500px;
-  margin: 0 auto;
-}
-header {
-  text-align: center;
-  margin-bottom: 24px;
-}
-.avatar {
-  font-size: 48px;
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
-  background: #1e293b;
-  border-radius: 50%;
-  margin: 0 auto 16px;
-  border: 2px solid #00f5c4;
-}
-h1 { font-size: 24px; margin-bottom: 6px; }
-.tagline { color: #00f5c4; font-size: 14px; margin-bottom: 12px; }
-.tags { display: flex; justify-content: center; gap: 8px; }
-.badge {
-  background: #1e293b;
-  color: #94a3b8;
-  padding: 4px 10px;
-  border-radius: 20px;
-  font-size: 12px;
-}
-.card {
-  background: #131a29;
-  border: 1px solid #1e293b;
-  border-radius: 14px;
+  background: #0f172a;
+  color: #f8fafc;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
-  margin-bottom: 16px;
 }
-h2 { font-size: 18px; color: #38bdf8; margin-bottom: 10px; }
-p { color: #94a3b8; line-height: 1.5; font-size: 14px; }
-.project-item {
-  border-left: 3px solid #00f5c4;
-  padding-left: 12px;
-  margin-top: 12px;
-}
-.project-item h3 { font-size: 15px; margin-bottom: 4px; }
-.btn {
+.container {
+  text-align: center;
+  background: #1e293b;
+  padding: 32px 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  max-width: 400px;
   width: 100%;
+}
+h1 {
+  color: #00f5c4;
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+p {
+  color: #94a3b8;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+button {
   background: #00f5c4;
   color: #021e18;
   border: none;
-  padding: 14px;
+  padding: 12px 24px;
   border-radius: 10px;
-  font-weight: 700;
+  font-weight: 600;
   cursor: pointer;
+  transition: transform 0.1s ease, background 0.2s ease;
 }
-.toast {
-  margin-top: 12px;
-  padding: 12px;
-  background: #1e293b;
+button:active {
+  transform: scale(0.96);
+}
+#output {
+  margin-top: 16px;
+  margin-bottom: 0;
   color: #38bdf8;
-  border-radius: 8px;
-  font-size: 13px;
-  text-align: center;
+  font-weight: 500;
 }
-.hidden { display: none; }
